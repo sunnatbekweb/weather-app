@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherComponent from "./weatherComponent"
+import WeatherComponent from "./components/weatherComponent"
 import { Provider } from "react-redux";
 import store from "./store/store";
 

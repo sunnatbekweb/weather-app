@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './style.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, fetchWeather } from '../store/store';
-import { RootState } from '../store/store';
-import WeatherInfo from '../components/WeatherInfo';
+import { AppDispatch, fetchWeather } from '../../store/store';
+import { RootState } from '../../store/store';
+import WeatherInfo from '../WeatherInfo';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 
 const WeatherComponent: React.FC = () => {
