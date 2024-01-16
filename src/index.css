@@ -6,4 +6,17 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #1a1a1a, #1B262C);
   color: #ffffff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #78CFFF;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1B262C;
 }

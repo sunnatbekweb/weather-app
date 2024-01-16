@@ -6,6 +6,10 @@ interface WeatherData {
     country_code: string;
     temp: number;
     wind_spd: number;
+    sunrise: string;
+    sunset: string;
+    wind_cdir_full: string;
+    aqi: number;
     weather: {
         description: string;
     };

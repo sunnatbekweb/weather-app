@@ -1,5 +1,6 @@
 .weather_info {
-    width: fit-content;
+    max-width: fit-content;
+    width: 100%;
     position: relative;
     display: flex;
     padding: 20px 52px 20px 52px;
@@ -9,4 +10,73 @@
     border-radius: 20px;
     background: #24353E;
     box-shadow: 10px 9px 70px 0px rgba(36, 53, 62, 0.40);
+
+    & .temperature {
+        color: #FFF;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    & .desc {
+        color: #FFF;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    & .sun {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & .sun_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            & p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                column-gap: 5px;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    & .wind_aqi {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        & .wind,
+        .aqi {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            & .text {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #FFF;
+                font-weight: 500;
+            }
+        }
+    }
 }

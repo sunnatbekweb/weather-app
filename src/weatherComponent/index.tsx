@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, fetchWeather } from '../store/store';
 import { RootState } from '../store/store';
 import WeatherInfo from '../components/WeatherInfo';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 
 const WeatherComponent: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -32,6 +33,7 @@ const WeatherComponent: React.FC = () => {
           className='country_inp'
         />
         <button className='btn' onClick={handleFetchWeather}>Get Weather</button>
+        <button className='btn2' onClick={handleFetchWeather}><TravelExploreIcon /></button>
       </div>
 
       <div className='wrapper'>
