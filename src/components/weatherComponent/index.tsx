@@ -20,14 +20,14 @@ const WeatherComponent: React.FC = () => {
   return (
     <div className='weather_comp'>
       <div className='image_container'>
-        <img src="../../public/Group6.svg" alt="Background image" className='bg_image' />
+        <img src="../../../public/Group6.png" alt="Background image" className='bg_image' />
       </div>
 
       <h2 className='title'>Seeing the weather of the world!</h2>
 
       <div className='input_container'>
         <input type="text"
-          placeholder='Enter city name'
+          placeholder='Enter city name to see information!'
           value={city}
           onChange={(e) => setCity(e.target.value)}
           className='country_inp'
@@ -39,9 +39,7 @@ const WeatherComponent: React.FC = () => {
       <div className='wrapper'>
         {weatherData && (
           <WeatherInfo key={weatherData.temp} />
-
         )}
-
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </div>
     </div>
