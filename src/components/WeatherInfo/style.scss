@@ -1,0 +1,12 @@
+.weather_info {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    padding: 20px 52px 20px 52px;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    border-radius: 20px;
+    background: #24353E;
+    box-shadow: 10px 9px 70px 0px rgba(36, 53, 62, 0.40);
+}

@@ -1,0 +1,17 @@
+.btn {
+    border-radius: 12px;
+    background: #24343D;
+    box-shadow: 10px 10px 30px 0px rgba(36, 52, 61, 0.60) inset;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    font-weight: 600;
+
+    &:hover {
+        scale: 105%;
+    }
+
+    &:active {
+        border: 3px solid #78CFFF;
+    }
+}
