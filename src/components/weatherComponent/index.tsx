@@ -19,9 +19,6 @@ const WeatherComponent: React.FC = () => {
 
   return (
     <div className='weather_comp'>
-      <div className='image_container'>
-        <img src="../../../public/Group6.png" alt="Background image" className='bg_image' />
-      </div>
 
       <h2 className='title'>Seeing the weather of the world!</h2>
 
