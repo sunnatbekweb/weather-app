@@ -37,6 +37,14 @@ const WeatherInfo: React.FC = () => {
                 icon: <FlashOn />,
                 style: { color: 'purple' }
             },
+            'fog': {
+                icon: <Cloud />,
+                style: { color: 'gray' }
+            },
+            'smoke': {
+                icon: <Cloud />,
+                style: { color: 'gray' }
+            },
         };
 
         const words = weatherDescription.toLowerCase().split(' ');
