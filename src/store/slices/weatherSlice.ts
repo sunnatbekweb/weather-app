@@ -27,9 +27,9 @@ const initialState: WeatherState = {
     error: null,
 };
 
-export const fetchWeather = createAsyncThunk<WeatherData, string>('weather/fetchWeather', async (city: string) => {
+export const fetchWeather = createAsyncThunk<WeatherData, string>('w    eather/fetchWeather', async (city: string) => {
     try {
-        const apiKey = 'fc2d94057c7f4983b078d104a52d7315	';
+        const apiKey = 'fc2d94057c7f4983b078d104a52d7315';
         const response = await axios.get(`https://api.weatherbit.io/v2.0/current?city=${city}&key=${apiKey}`);
         return response.data.data[0];
     } catch (error) {
